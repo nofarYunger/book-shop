@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: url(../img/bgc.jpg); */
+   
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+}
+
+th, td {
+    /* border: 1px solid grey; */
+    text-align: center;
+    background-color: rgba(196, 186, 186, 0.774);
+}
+
+
+.create-book {
+    background-color: rgb(175, 163, 184);
+    display: none;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50vw;
+    height: 150px;
+    max-width: 270px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.create-book button {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.book-details {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(207, 173, 230);
+    width: 500px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.book-details button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.rating span img{
+    height: 20px;
+    background-color: none;
+}
+.sort{
+    cursor: pointer;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/book-bg.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    margin: 50px;
+}
+
+button{
+    border: none;
+}
