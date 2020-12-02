@@ -5,20 +5,23 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* background-image: url(../img/bgc.jpg); */
-   
+    width: 100%;
+}
+body.rtl {
+    direction: rtl;
 }
 
+.table-img{
+height: 100px;
+}
 h1 {
     display: inline-block;
     font-size: 50px;
 }
 
 th, td {
-    /* border: 1px solid grey; */
     text-align: center;
-    background-color: rgba(196, 186, 186, 0.774);
 }
-
 
 .create-book {
     background-color: rgb(175, 163, 184);
@@ -48,7 +51,6 @@ th, td {
     background-color: rgb(207, 173, 230);
     width: 500px;
     font-family: 'Arial Narrow', Arial, sans-serif;
-
     padding: 20px;
     margin-bottom: 50px;
 }
@@ -59,12 +61,12 @@ th, td {
     right: 0;
 }
 
-
-.rating span img{
+.rating span img {
     height: 20px;
     background-color: none;
 }
-.sort{
+
+.sort {
     cursor: pointer;
 }
 
@@ -73,38 +75,120 @@ body, html {
 }
 
 /* The hero image */
+
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/book-bg.png");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/book-bg.png");
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* Place text in the middle of the image */
+
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-table{
+
+table {
     margin: 50px;
+    
+}
+button {
+    border: none;
+}
+
+.card-btns {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
+.navbar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.466);
+    z-index: 1000000;
+    width: 100%;
+}
+
+.contact-form{
+    position: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: stretch;
+    width: 500px;
+    height: 150px;
+}
+
+textarea{
+    height: 30px;
+}
+.input{
+    
+    position: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/book-bg.png");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.card{
+    max-width: 280px;
+    margin: 20px;
+}
+
+.fa{
+    margin: 10px;
+    width: 12px;
+    cursor: pointer;
 }
 
 button{
-    border: none;
+    cursor: pointer;
+}
+.input label{
+    display: inline-block;
+    text-align: start;
+}
+.modal-read{
+   display: flex;
+   align-items: center; 
+   justify-content: center;
 }
